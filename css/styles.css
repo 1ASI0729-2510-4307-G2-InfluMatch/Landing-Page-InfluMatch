@@ -1,3 +1,4 @@
+/* Variables y reset */
 :root {
     --primary-color: #2D46B9;
     --secondary-color: #6C7AE0;
@@ -93,4 +94,58 @@ ul {
     cursor: pointer;
     transition: var(--transition);
     border: none;
+}
+
+.btn-primary {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--light-blue);
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--dark-blue);
+    transform: translateY(-3px);
+}
+
+.btn-full {
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Header y Navegación */
+.header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo img {
+    height: 40px;
+    filter: brightness(0) invert(1);
+    /* Hace el logo blanco */
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin-left: 2rem;
 }
